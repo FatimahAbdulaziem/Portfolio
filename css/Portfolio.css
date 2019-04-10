@@ -1,0 +1,72 @@
+/* body{
+  margin: auto;
+}
+.portfolio_header{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.header_logo{
+  width:30%;
+}
+.header_logo img{
+  max-width:100%;
+  border-radius: 50px;
+}
+
+.header_title{
+  width:70%;
+  align-content: flex-end;
+}
+.header_title h3{
+  color:blue;
+} */
+
+
+
+.portfolio_header{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid ;
+}
+
+
+.header_logo{
+  width:25%;
+}
+
+.header_logo img{
+  max-width: 100%;
+  border-radius: 20%;
+}
+
+.header_title{
+  width:75%;
+}
+
+.header_title h3{
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  color: #02b3e4;
+  font-weight: bold;
+  padding-top: 0.5em;
+  text-align: right;
+  margin: 0;
+
+
+}
+
+.header_title h4{
+  font-family: Papyrus, fantasy;
+  text-align: right;
+  margin: 0;
+
+}
+
+
+  /* font-family:"Brush Script MT", cursive; */

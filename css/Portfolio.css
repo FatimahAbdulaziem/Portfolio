@@ -1,20 +1,21 @@
 
-/* Viewport = Nexus5 */
+/* Styles for nexus5 viewport */
 
-/* HTML page header's style */
+/*  1- Body-Header Style*/
+
 .portfolio_header{
   display:flex;
   flex-direction:row;
+  flex-wrap:nowrap;
   justify-content:space-between;
-  /* padding-bottom: 0.3em; */
   border-bottom: 2px solid ;
+  margin: 0;
 }
 .header_logo{
   width:25%;
 }
 .header_logo img{
   max-width: 100%;
-  border-radius: 20%;
 }
 .header_title{
   width:75%;
@@ -33,31 +34,21 @@
   font-family: Papyrus, fantasy;
   text-align: right;
   padding-top: 0.5em;
-  margin-right: 5%;
+  margin-right:5%;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-  /* font-family:"Brush Script MT", cursive; */
-
-
-/*  Main Content of the HTML page's style*/
+/*2- Body-Main Content Style */
 .portfolio_body{
   display:flex;
   flex-direction:column;
   justify-content:space-between;
   padding-top: 1em;
 }
-.portfolio_body h3{
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  color: #708090;
-  text-transform:uppercase;
-}
-
 .main_img{
   width:100%;
 }
-
 .main_img img{
   max-width: 100%;
   border-radius: 20%;
@@ -66,8 +57,11 @@
   border-color: gray;
   box-shadow: 5px 5px 20px #ccc;
 }
-
-
+.portfolio_body h3{
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  color: #708090;
+  text-transform:uppercase;
+}
 .hand_made_projects figure{
   width:50%;
   margin: auto;
@@ -75,52 +69,85 @@
   margin-bottom: 10px;
   text-align: center;
 }
-
 .hand_made_projects img{
   max-width:100%;
   border-radius: 5%;
   box-shadow: 5px 5px 20px #ccc;
   margin: 5%;
 }
-
 .hand_made_projects p{
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
   font-weight: bold;
 }
-
 .hand_made_projects a{
   cursor: pointer;
   padding: 1.5em;
-    text-align: center;
+  text-align: center;
 }
 
-
-/*  Show Data within Ipad viewport*/
-
-@media screen and (min-width:361px) and (max-width:786px){
+/* edited styles for Ipad viewport */
+@media screen and (min-width:361px) and (max-width:768px){
 .header_title h3{
   /* convert h3 size to bigger than h1 */
   font-size: 2.5em;
 }
-
 .header_title h4{
-  /*  convert h4 to h1 in its size*/
+  /*  convert h4 to h1 */
   font-size: 2em;
-
 }
-
 .portfolio_body h3{
   /* convert h3 to h1 */
   font-size: 2em;
 }
-
 .hand_made_projects p{
   font-size: 1.5em;
 }
-
 .hand_made_projects a{
   font-size: 1.5em;
+}
+}
+
+/* edited syles for Desktop(1280px) viewport */
+@media screen and (min-width:769px) and (max-width:1280px){
+
+/*1- Body_Header edited style */
+.header_title h3{
+  /*  convert h3 to bigger than h1*/
+  font-size: 3.83em;
+}
+.header_title h4{
+  /*  convert h4 to h1 in its size*/
+  font-size: 3em;
+}
+
+/*2- Body-main content edited style */
+.main_img{
+  width:70%;
+  margin: auto;
+}
+
+.hand_made_projects{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: auto;
+}
+.hand_made_projects figure{
+  width:30%;
+  text-align: center;
+}
+
+.portfolio_body h3{
+  /* convert h3 to h1 */
+  font-size: 2.83em;
+}
+.hand_made_projects p{
+  font-size: 2em;
+}
+.hand_made_projects a{
+  font-size: 2em;
 }
 }

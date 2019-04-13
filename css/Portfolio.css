@@ -1,33 +1,7 @@
-/* body{
-  margin: auto;
-}
-.portfolio_header{
-  width:100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items:center;
-  justify-content:space-between;
-}
 
-.header_logo{
-  width:30%;
-}
-.header_logo img{
-  max-width:100%;
-  border-radius: 50px;
-}
+/* Viewport = Nexus5 */
 
-.header_title{
-  width:70%;
-  align-content: flex-end;
-}
-.header_title h3{
-  color:blue;
-} */
-
-
-
+/* HTML page header's style */
 .portfolio_header{
   display:flex;
   flex-direction:row;
@@ -35,53 +9,49 @@
   /* padding-bottom: 0.3em; */
   border-bottom: 2px solid ;
 }
-
-
 .header_logo{
   width:25%;
 }
-
 .header_logo img{
   max-width: 100%;
   border-radius: 20%;
 }
-
 .header_title{
   width:75%;
 }
-
 .header_title h3{
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   color: #02b3e4;
   font-weight: bold;
   padding-top: 0.5em;
   text-align: right;
-  margin: 0;
-
-
+  margin-right:5%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
 .header_title h4{
   font-family: Papyrus, fantasy;
   text-align: right;
-  margin: 0;
-
+  padding-top: 0.5em;
+  margin-right: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
 
   /* font-family:"Brush Script MT", cursive; */
 
 
-/*  Main Content of the HTML page*/
-
-
+/*  Main Content of the HTML page's style*/
 .portfolio_body{
   display:flex;
-  /* flex-wrap: wrap; */
   flex-direction:column;
   justify-content:space-between;
   padding-top: 1em;
-  /* border-bottom: 2px solid ;  */
+}
+.portfolio_body h3{
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  color: #708090;
+  text-transform:uppercase;
 }
 
 .main_img{
@@ -90,6 +60,11 @@
 
 .main_img img{
   max-width: 100%;
+  border-radius: 20%;
+  border-style: groove;
+  border-width: medium;
+  border-color: gray;
+  box-shadow: 5px 5px 20px #ccc;
 }
 
 
@@ -98,18 +73,36 @@
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .hand_made_projects img{
   max-width:100%;
+  border-radius: 5%;
+  box-shadow: 5px 5px 20px #ccc;
+  margin: 5%;
 }
 
 .hand_made_projects p{
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  font-weight: bold;
 }
 
 .hand_made_projects a{
-  padding:1em;
+  cursor: pointer;
+  padding: 1.5em;
+    text-align: center;
 }
+
+
+
+/* Footer of the page */
+/* .portfolio_footer{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  /* padding-bottom: 0.3em; */
+  /* border-top: 2px solid ; */
+/* } */

@@ -97,12 +97,30 @@
 }
 
 
+/*  Show Data within Ipad viewport*/
 
-/* Footer of the page */
-/* .portfolio_footer{
-  display:flex;
-  flex-direction:row;
-  justify-content:space-around;
-  /* padding-bottom: 0.3em; */
-  /* border-top: 2px solid ; */
-/* } */
+@media screen and (min-width:361px) and (max-width:786px){
+.header_title h3{
+  /* convert h3 size to bigger than h1 */
+  font-size: 2.5em;
+}
+
+.header_title h4{
+  /*  convert h4 to h1 in its size*/
+  font-size: 2em;
+
+}
+
+.portfolio_body h3{
+  /* convert h3 to h1 */
+  font-size: 2em;
+}
+
+.hand_made_projects p{
+  font-size: 1.5em;
+}
+
+.hand_made_projects a{
+  font-size: 1.5em;
+}
+}
